@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@font-face {
+    font-family: "Fonte-logo";
+    src: url("../_fonts/computer-font.ttf");
+}
+
+/* Formatação do corpo e parágrafos*/
+
+body {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 1200px;
+    background-color: #FFFFFF;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1085px;
+    top: 90px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+}
+
+header#cabecalho h1 {
+    font-family: Fonte-logo, sans-serif;
+    font-size: 48px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0%;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #888888;
+    font-size: 18px;
+    padding: 0%;
+    margin-top: 0px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 99.5%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formtação no Menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 700px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu li:hover {
+    background-color: #606060;    
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+nav#menu a:hover {
+    color: #FFFFFF;
+
+}
