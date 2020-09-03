@@ -27,12 +27,12 @@ p {
 
 header#cabecalho img#icone{
     position: absolute;
-    left: 1085px;
-    top: 90px;
+    left: 1100px;
+    top: 100px;
 }
 
 header#cabecalho {
-    border-bottom: 1px #606060 solid;
+    border-bottom: 2px #606060 solid;
     height: 150px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
 }
@@ -95,7 +95,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 700px;
+    left: 650px;
 }
 
 nav#menu li {
@@ -129,8 +129,46 @@ section#corpo {
     display: block;
     width: 740px;
     float: left;
-    border-right: 1px solid #606060;
+    border-right: 2px solid #606060;
     padding-right: 15px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #FFFFFF;
+    background-color:#606060;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    color: #615959;
+    background-color:#dddddd;
+}
+
+table#tabelaspec caption {
+    color: #cecece;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
 }
 
 aside#lateral {
@@ -141,7 +179,7 @@ aside#lateral {
 
 footer#rodape {
     clear: both;
-    border-top: 1px solid #606060;
+    border-top: 2px solid #606060;
 }
 
 footer#rodape p {
