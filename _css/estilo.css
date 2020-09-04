@@ -8,6 +8,7 @@
 /* Formatação do corpo e parágrafos*/
 
 body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 1);
 }
@@ -25,6 +26,16 @@ p {
     text-indent: 50px;
 }
 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 header#cabecalho img#icone{
     position: absolute;
     left: 1100px;
@@ -38,7 +49,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-    font-family: Fonte-logo, sans-serif;
+    font-family: "Fonte-logo", sans-serif;
     font-size: 48px;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -95,7 +106,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 650px;
+    left: 700px;
 }
 
 nav#menu li {
@@ -127,10 +138,41 @@ nav#menu a:hover {
 
 section#corpo {
     display: block;
-    width: 740px;
+    width: 735px;
     float: left;
     border-right: 2px solid #606060;
     padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: "Fonte-logo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #FFFFFF;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
 }
 
 table#tabelaspec {
@@ -175,6 +217,24 @@ aside#lateral {
     display: block;
     width: 420px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font-family: "Fonte-logo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;    
 }
 
 footer#rodape {
