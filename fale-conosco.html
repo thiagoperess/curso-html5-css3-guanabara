@@ -6,8 +6,15 @@
 	<title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/form.css"/>
+    <script src="_javascript/funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById("cQtd").value);
+            tot = qtd * 1500;
+            document.getElementById("cTot").value = tot;
+        }
+    </script>
 </head>
-<script src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
 	<header id="cabecalho">
@@ -39,7 +46,7 @@
 		<h3 class="direita">Atualizado em 01/Maio/2013</h3>
 		</hgroup>
 		</header>
-            <form method="POST" id="fContato" action="mailto:thiagoperesschweitzer@gmail.com">
+            <form method="POST" id="fContato" action="mailto:thiagoperesschweitzer@gmail.com" oninput="calc_total();">
             <fieldset id="usuario">
             <legend>Identificação do Usuário</legend>
             <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Digite aqui seu nome"/></p>
@@ -79,17 +86,19 @@
 
             <fieldset id="mensagem">
             <legend>Mensagem do Usuário</legend>
-                <p>Grau de Urgência:</p>
-                <p>Mensagem:</p>
+                <p>Grau de Urgência:&nbsp; Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1"> Max</p>
+                <p>Mensagem:&nbsp;
+                    <textarea name="tMgs" id="sMsg" cols="40" rows="1" placeholder="Arraste o canto para abrir a caixa"></textarea>
+                </p>
             </fieldset>
 
             <fieldset id="pedido">
             <legend>Quero um Google Glass</legend>
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
-                [BOTÃO ENVIAR]
+                <p> <input type="checkbox" name="tPed" id="cPed"/> &nbsp;Gostaria de adquirir um Google Glass quando disponível</p>
+                <p> Cor: &nbsp;<input type="color" name="tCor" id="cCor" value="#000000"></p>
+                <p>Quantidade: &nbsp;<input type="number" name="tQtd" id="cQtd" min="0" max="999999" value="0"></p>
+                <p>Preço Total: R$ &nbsp;   <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+                <input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
             </fieldset>
             </form>
 
