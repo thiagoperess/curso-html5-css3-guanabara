@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @font-face {
     font-family: "Fonte-logo";
-    src: url("../_fonts/computer-font.ttf");
+    src: url("../fonts/computer-font.ttf");
 }
 
 /* Formatação do corpo e parágrafos*/
@@ -47,7 +47,7 @@ header#cabecalho img#icone{
 header#cabecalho {
     border-bottom: 2px #606060 solid;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+    background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
 }
 
 header#cabecalho h1 {
